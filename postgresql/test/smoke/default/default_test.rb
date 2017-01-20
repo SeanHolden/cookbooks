@@ -28,6 +28,7 @@ describe file('/var/lib/pgsql/data/pg_hba.conf') do
   it { should exist }
 
   it { should be_owned_by('postgres') }
+
   it { should be_readable.by('owner') }
   it { should be_writable.by('owner') }
   it { should_not be_executable.by('owner') }
