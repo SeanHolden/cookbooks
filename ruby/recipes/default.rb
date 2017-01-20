@@ -4,7 +4,7 @@
 #
 # Copyright:: 2017, Sean Holden, All Rights Reserved.
 
-#include_recipe "ruby_install::default"
+include_recipe "ruby_install::default"
 
 rubies_dir = node['ruby']['rubies_dir']
 

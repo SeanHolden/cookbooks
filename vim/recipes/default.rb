@@ -4,6 +4,8 @@
 #
 # Copyright:: 2017, Sean Holden, All Rights Reserved.
 
+include_recipe 'git::default'
+
 package 'vim-enhanced'
 
 directory '/home/vagrant/.vim' do
