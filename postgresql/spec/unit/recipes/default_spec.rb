@@ -30,5 +30,9 @@ describe 'postgresql::default' do
     it 'installs package postgresql-server' do
       expect(chef_run).to install_package('postgresql-server')
     end
+
+    it 'installs package postgresql-contrib' do
+      expect(chef_run).to install_package('postgresql-contrib')
+    end
   end
 end
