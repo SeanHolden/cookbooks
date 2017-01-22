@@ -40,15 +40,13 @@ template '/home/vagrant/.vimrc' do
   mode '644'
 end
 
-git '/home/vagrant/.vim/bundle' do
-  repository 'git://github.com/VundleVim/Vundle.vim.git'
-  revision 'master'
-  user 'vagrant'
-  group 'vagrant'
-end
-
-execute 'Install/Update all vim plugins' do
-  user 'vagrant'
-  cwd '/home/vagrant'
-  command 'vim +PluginInstall +qall'
+# install plugins
+node['vim']['plugins'].each do |plugin|
+  git "/home/vagrant/.vim/bundle/#{plugin.split('/').last}" do
+    repository "https://github.com/#{plugin}.git"
+    user 'vagrant'
+    group 'vagrant'
+    environment ({ 'HOME' => '/home/vagrant', 'USER' => 'vagrant' })
+    timeout 10
+  end
 end

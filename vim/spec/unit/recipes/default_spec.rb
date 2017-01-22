@@ -75,22 +75,68 @@ describe 'vim::default' do
 
     describe '#git' do
       it 'checkout/sync Vundle repo' do
-        expect(chef_run).to sync_git('/home/vagrant/.vim/bundle').
+        expect(chef_run).to sync_git('/home/vagrant/.vim/bundle/Vundle.vim').
           with(
-            repository: 'git://github.com/VundleVim/Vundle.vim.git',
-            revision: 'master',
+            repository: 'https://github.com/VundleVim/Vundle.vim.git',
             user: 'vagrant',
-            group: 'vagrant'
+            group: 'vagrant',
+            environment: { 'HOME' => '/home/vagrant', 'USER' => 'vagrant' },
+            timeout: 10
           )
       end
-    end
 
-    describe '#execute' do
-      it 'installs all vim plugins' do
-        expect(chef_run).to run_execute('vim +PluginInstall +qall').
+      it 'checkout/sync ctrlp repo' do
+        expect(chef_run).to sync_git('/home/vagrant/.vim/bundle/ctrlp.vim').
           with(
+            repository: 'https://github.com/kien/ctrlp.vim.git',
             user: 'vagrant',
-            cwd: '/home/vagrant'
+            group: 'vagrant',
+            environment: { 'HOME' => '/home/vagrant', 'USER' => 'vagrant' },
+            timeout: 10
+          )
+      end
+
+      it 'checkout/sync nerdtree repo' do
+        expect(chef_run).to sync_git('/home/vagrant/.vim/bundle/nerdtree').
+          with(
+            repository: 'https://github.com/scrooloose/nerdtree.git',
+            user: 'vagrant',
+            group: 'vagrant',
+            environment: { 'HOME' => '/home/vagrant', 'USER' => 'vagrant' },
+            timeout: 10
+          )
+      end
+
+      it 'checkout/sync tlib repo' do
+        expect(chef_run).to sync_git('/home/vagrant/.vim/bundle/tlib_vim').
+          with(
+            repository: 'https://github.com/tomtom/tlib_vim.git',
+            user: 'vagrant',
+            group: 'vagrant',
+            environment: { 'HOME' => '/home/vagrant', 'USER' => 'vagrant' },
+            timeout: 10
+          )
+      end
+
+      it 'checkout/sync vim-better-whitespace repo' do
+        expect(chef_run).to sync_git('/home/vagrant/.vim/bundle/vim-better-whitespace').
+          with(
+            repository: 'https://github.com/ntpeters/vim-better-whitespace.git',
+            user: 'vagrant',
+            group: 'vagrant',
+            environment: { 'HOME' => '/home/vagrant', 'USER' => 'vagrant' },
+            timeout: 10
+          )
+      end
+
+      it 'checkout/sync vim-snipmate repo' do
+        expect(chef_run).to sync_git('/home/vagrant/.vim/bundle/vim-snipmate').
+          with(
+            repository: 'https://github.com/garbas/vim-snipmate.git',
+            user: 'vagrant',
+            group: 'vagrant',
+            environment: { 'HOME' => '/home/vagrant', 'USER' => 'vagrant' },
+            timeout: 10
           )
       end
     end
