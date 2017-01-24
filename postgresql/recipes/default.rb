@@ -8,6 +8,7 @@ package 'postgresql'
 package 'postgresql-libs'
 package 'postgresql-server'
 package 'postgresql-contrib'
+package 'postgresql-devel'
 
 execute 'create new postgresql database cluster' do
   cwd '/opt'

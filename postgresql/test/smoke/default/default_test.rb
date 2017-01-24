@@ -3,19 +3,23 @@
 # Inspec test for recipe postgresql::default
 
 describe package('postgresql') do
-  it { should be_installed}
+  it { should be_installed }
 end
 
 describe package('postgresql-libs') do
-  it { should be_installed}
+  it { should be_installed }
 end
 
 describe package('postgresql-server') do
-  it { should be_installed}
+  it { should be_installed }
 end
 
 describe package('postgresql-contrib') do
-  it { should be_installed}
+  it { should be_installed }
+end
+
+describe package('postgresql-devel') do
+  it { should be_installed }
 end
 
 describe service('postgresql') do
