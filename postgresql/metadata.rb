@@ -1,6 +1,6 @@
 name 'postgresql'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Sean Holden'
+maintainer_email 'seanholden1@gmail.com'
 license 'all_rights'
 description 'Installs/Configures postgresql'
 long_description 'Installs/Configures postgresql'
