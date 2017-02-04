@@ -1,3 +1,10 @@
+#
+# Cookbook:: postgresql
+# Recipe:: app_setup
+# For setting up a database ready for use in a web app
+#
+# Copyright:: 2017, Sean Holden, All Rights Reserved.
+#
 execute 'Create new psql user' do
   db_user = node['postgresql']['db_user']
   db_password = node['postgresql']['db_password']

@@ -1,0 +1,3 @@
+default['postgresql']['db_user'] = 'vagrant'
+default['postgresql']['db_password'] = 'test_password'
+default['postgresql']['db_name'] = 'app_name'

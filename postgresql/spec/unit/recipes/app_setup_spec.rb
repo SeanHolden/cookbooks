@@ -1,11 +1,11 @@
 # Cookbook:: postgresql
-# Spec:: lookit_cookit
+# Spec:: app_setup
 #
 # Copyright:: 2017, Sean Holden, All Rights Reserved.
 
 require 'spec_helper'
 
-describe 'postgresql::lookit_cookit' do
+describe 'postgresql::app_setup' do
   context 'When all attributes are default, on centos7' do
     let(:platform) { 'centos' }
     let(:version) { '7.2.1511' }

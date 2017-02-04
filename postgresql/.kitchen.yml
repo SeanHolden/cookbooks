@@ -23,11 +23,16 @@ suites:
       inspec_tests:
         - test/smoke/default
     attributes:
-  - name: lookit_cookit
+  - name: app_setup
     run_list:
       - recipe[postgresql::default]
-      - recipe[postgresql::lookit_cookit]
+      - recipe[postgresql::app_setup]
     verifier:
       inspec_tests:
         - test/smoke/default
+        - test/smoke/app_setup
     attributes:
+      postgresql:
+        db_user: 'test_db_user'
+        db_password: 'test_db_password'
+        db_name: 'test_db_name'
