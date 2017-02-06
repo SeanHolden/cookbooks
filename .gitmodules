@@ -1,3 +1,6 @@
 [submodule "ruby_install"]
 	path = ruby_install
 	url = https://github.com/SeanHolden/ruby_install
+[submodule "git"]
+	path = git
+	url = https://github.com/SeanHolden/git
