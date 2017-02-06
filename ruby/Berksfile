@@ -1,4 +1,4 @@
 source 'https://supermarket.chef.io'
 
 metadata
-cookbook "ruby_install", "~> 0.1.0", path: "../ruby_install"
+cookbook "ruby_install", "~> 0.1.0", git: "https://github.com/example/library-cookbook.git"
