@@ -4,3 +4,6 @@
 [submodule "git"]
 	path = git
 	url = https://github.com/SeanHolden/git
+[submodule "dev_env"]
+	path = dev_env
+	url = https://github.com/SeanHolden/dev_env
