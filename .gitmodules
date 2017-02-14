@@ -7,3 +7,6 @@
 [submodule "dev_env"]
 	path = dev_env
 	url = https://github.com/SeanHolden/dev_env
+[submodule "the_silver_searcher"]
+	path = the_silver_searcher
+	url = https://github.com/SeanHolden/the_silver_searcher
