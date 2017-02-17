@@ -7,3 +7,6 @@
 [submodule "dev_env"]
 	path = dev_env
 	url = https://github.com/SeanHolden/dev_env
+[submodule "npm"]
+	path = npm
+	url = git@github.com:SeanHolden/npm.git
