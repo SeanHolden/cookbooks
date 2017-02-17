@@ -1,12 +1,15 @@
 [submodule "ruby_install"]
 	path = ruby_install
-	url = https://github.com/SeanHolden/ruby_install
+	url = git@github.com:SeanHolden/ruby_install.git
 [submodule "git"]
 	path = git
-	url = https://github.com/SeanHolden/git
+	url = git@github.com:SeanHolden/git.git
 [submodule "dev_env"]
 	path = dev_env
-	url = https://github.com/SeanHolden/dev_env
+	url = git@github.com:SeanHolden/dev_env.git
+[submodule "the_silver_searcher"]
+	path = the_silver_searcher
+	url = git@github.com:SeanHolden/the_silver_searcher.git
 [submodule "npm"]
 	path = npm
 	url = git@github.com:SeanHolden/npm.git
