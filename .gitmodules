@@ -13,3 +13,6 @@
 [submodule "npm"]
 	path = npm
 	url = git@github.com:SeanHolden/npm.git
+[submodule "ohmyzsh"]
+	path = ohmyzsh
+	url = git@github.com:SeanHolden/ohmyzsh.git
