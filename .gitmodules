@@ -16,3 +16,6 @@
 [submodule "ohmyzsh"]
 	path = ohmyzsh
 	url = git@github.com:SeanHolden/ohmyzsh.git
+[submodule "ssh"]
+	path = ssh
+	url = git@github.com:SeanHolden/ssh.git
