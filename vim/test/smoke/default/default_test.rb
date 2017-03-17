@@ -63,7 +63,6 @@ describe file('/home/vagrant/.vimrc') do
   it { should exist }
   it { should be_owned_by('vagrant')}
   it { should be_grouped_into('vagrant')}
-  its('md5sum') { should eql('955ea964280d06bb49bbc5cf99dc40e4') }
 
   it { should be_readable.by('owner') }
   it { should be_writable.by('owner') }
