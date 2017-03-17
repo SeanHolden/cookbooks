@@ -19,3 +19,6 @@
 [submodule "ssh"]
 	path = ssh
 	url = git@github.com:SeanHolden/ssh.git
+[submodule "vim"]
+	path = ssh
+	url = git@github.com:SeanHolden/vim.git
