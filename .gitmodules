@@ -22,3 +22,6 @@
 [submodule "vim"]
 	path = vim
 	url = git@github.com:SeanHolden/vim.git
+[submodule "nginx"]
+	path = nginx
+	url = https://github.com/seanholden/nginx
